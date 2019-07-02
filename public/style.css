@@ -1,0 +1,275 @@
+
+/* -------------------------------- Base CSS  -------------------------------- */
+
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  line-height: 1.5;
+  color: #24292e;
+  background-color: #fff;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  background-color: transparent;
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  border-style: none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------- Octodex styles -------------------------------- */
+
+.body-bg {
+  background-color: #fafbfc !important;
+}
+
+.container {
+  width: auto;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 24px !important;
+  padding-left: 24px !important;
+}
+
+.container-2 {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.container-2>[class*="col-"] {
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+}
+
+footer.container {
+  width: auto;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 24px !important;
+  padding-left: 24px !important;
+  color: #586069 !important;
+}
+
+.container-2 img {
+  border-radius: 3px !important;
+}
+
+.card-base {
+  padding: 0 8px !important;
+  margin-bottom: 40px !important;
+}
+
+.card-base > a {
+  padding: 8px !important;
+  display: block !important;
+  margin-bottom: 16px !important;
+  background-color: #fff !important;
+  border: 1px #e1e4e8 solid !important;
+  border-radius: 9px; 
+}
+
+.card-first-a-tag > img {
+  max-width: 100% !important;
+  height: auto; 
+}
+
+.caption {
+  display: flex !important;
+}
+
+.caption-flex-align {
+  align-items: flex-start !important;
+}
+
+.caption-pic {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  margin-left: auto;
+}
+
+.caption-pic img {
+  margin-left: 4px !important;
+}
+
+.caption-number {
+  padding-right: 4px !important;
+  color: #586069 !important;
+}
+
+.link-text {
+  color: #24292e !important;
+  font-weight: 600 !important;
+}
+
+.link-text:hover {
+  color: #0366d6 !important;
+  font-weight: 600 !important;
+}
+
+.nav-styles {
+  display: flex !important;
+  align-items: center !important;
+  color: #586069 !important;
+}
+
+.a-styles {
+  display: flex !important;
+  align-items: center !important;
+  color: #24292e !important;
+  margin-right: 24px !important;
+  text-decoration: none !important;
+  font-size: 16px !important;
+}
+
+nav a {
+  color: #586069 !important;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+.home {
+  text-decoration: none !important;
+  margin-right: 16px !important;
+}
+
+.octo-logo {
+  vertical-align: text-bottom;
+  margin-right: 8px !important;
+}
+
+.twitter-link { 
+  margin-left: auto; 
+}
+
+.git-link {
+  display: none !important;
+}
+
+.footer-styles {
+  border-top: 1px #e1e4e8 solid !important;
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+  margin-top: 40px !important;
+}
+
+.mr-auto { 
+  margin-right: auto; 
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255,255,255,.75);
+  background-clip: padding-box;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  box-shadow: 0 .5rem 1.25rem rgba(0,0,0,.05);
+  margin-bottom: 40px !important;
+}
+
+nav a {
+  font-size: 14px !important;
+}
+
+/* -------------------------------- Media Queries  -------------------------------- */
+
+@media (min-width: 544px) {
+  .card-544px {
+    width: 50%;
+    padding: 0 8px !important;
+    margin-bottom: 40px !important;
+  }
+  .card-544px > a {
+    padding: 8px !important;
+    display: block !important;
+    margin-bottom: 16px !important;
+    background-color: #fff !important;
+    border: 1px #e1e4e8 solid !important;
+    border-radius: 9px; 
+  }
+}
+
+@media (min-width: 768px) {
+  .card-768px {
+    padding: 0 16px !important;
+    margin-bottom: 40px !important;
+  }
+  .card-768px > a {
+    padding: 8px !important;
+    display: block !important;
+    margin-bottom: 16px !important;
+    background-color: #fff !important;
+    border-radius: 9px; 
+  }
+  .twitter-link-mr {
+      margin-right: 16px !important;
+  }
+  .container-2 {
+      margin-right: -16px;
+      margin-left: -16px;
+  }
+  .container-2>[class*="col-"] {
+      padding-right: 16px !important;
+      padding-left: 16px !important;
+  }
+  .git-link-768 {
+      display: block !important;
+  }
+}
+
+@media (min-width: 1012px) {
+  .card-1012px {
+      width: 33.33333%;
+      padding: 0 16px !important;
+      margin-bottom: 40px !important;
+  }
+  .card-1012px > a {
+    padding: 8px !important;
+    display: block !important;
+    margin-bottom: 16px !important;\
+    background-color: #fff !important;
+    border: 1px #e1e4e8 solid !important;
+    border-radius: 9px; 
+  }
+}
+
+@media (min-width: 1280px) {
+  .card-1280px {
+      width: 25%;
+      padding: 0 16px !important;
+      margin-bottom: 40px !important;
+  }
+  .card-1280 > a {
+    padding: 8px !important;
+    display: block !important;
+    margin-bottom: 16px !important;
+    background-color: #fff !important;
+    border: 1px #e1e4e8 solid !important;
+    border-radius: 9px; 
+  }
+}
